@@ -12,10 +12,12 @@ This particular branch uses ctypes to bind a C code (OpenACC) in Python, where P
 ## Reproducibility
 
 1) Containerization
+
 Ideally, code should be compiled and run inside the image provided by hpccm_image_factory.py
 It uses hpccm (https://github.com/NVIDIA/hpc-container-maker) to generate a Dockerfile.
 
 2) Create Conda Environment
+
 
 ```
 conda create --name exp01 python=3.8
@@ -27,7 +29,9 @@ conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c cond
 conda install cupy
 
 ```
-3) OpenACC Compiling'
+
+3) OpenACC Compiling
+
 
 It should be straightforward.
 
@@ -36,6 +40,7 @@ make
 ```
 
 4) Running Python code
+
 
 ```
 python bind.py
@@ -57,7 +62,7 @@ Valor de a: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 ```
 
 
-However, importing PyTorch in bind.py (uncommeting line 5, and nothing else changed) and running again, it returns:
+However, importing PyTorch in bind.py (uncommeting line 5, nothing else changed) and running again, it returns:
 
 ```
 <built-in method malloc of cupy.cuda.memory.MemoryPool object at 0x7fa28de86860>
