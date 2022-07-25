@@ -24,9 +24,9 @@ conda create --name exp01 python=3.8
 
 conda activate exp01
 
-conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge
+conda install pytorch==<1.12.0 torchvision==<0.13.0 torchaudio==<0.13.0 cudatoolkit=11.6 -c pytorch -c conda-forge
 
-conda install cupy
+conda install cupy==<10.4.0
 
 ```
 
