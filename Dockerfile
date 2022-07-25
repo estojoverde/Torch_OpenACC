@@ -3,14 +3,7 @@ FROM nvcr.io/nvidia/pytorch:22.04-py3
 # NVIDIA HPC SDK version 22.3
 RUN apt-get update -y && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-        bc \
         debianutils \
-        g++ \
-        gcc \
-        gcc-offload-nvptx \
-        gfortran \
-        libatomic1 \
-        libnuma1 \
         openssh-client \
         wget && \
     rm -rf /var/lib/apt/lists/*
