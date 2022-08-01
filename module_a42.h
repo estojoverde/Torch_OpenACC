@@ -11,7 +11,7 @@
 
 extern "C" {
 
-    int addvector_cab(float* a, float* b, float* c, int n);
+    int addvector_cab(void);
 }
 
 #endif

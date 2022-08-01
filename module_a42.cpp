@@ -2,10 +2,22 @@
 
 
 
-int addvector_cab(float* a, float* b, float* c, int n)
+int addvector_cab(void)
 {
     
-    int i; 
+    int i;
+    float a[50];
+    float b[50];
+    float c[50];
+    int n=50;
+
+    for( i=0; i<n; i++)
+    {
+        a[i] = 1;
+        b[i] = 1;
+        c[i] = 0;
+    }
+    
     printf("ENTERED C FUNCTION!\n");
 
     if( n == 0 ){
