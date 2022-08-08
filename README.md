@@ -52,20 +52,15 @@ python bind.py
 One should expect:
 
 ```
-<built-in method malloc of cupy.cuda.memory.MemoryPool object at 0x7ff636426860>
 ENTERED C FUNCTION!
 EXITING C FUNCTION!
-0
-Valor de c: [2. 2. 2. 2. 2. 2. 2. 2. 2. 2.]
-Valor de b: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
-Valor de a: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+Returned OKAY!
 ```
 
 
 However, importing PyTorch in bind.py (uncommeting line 5, nothing else changed) and running again, it returns:
 
 ```
-<built-in method malloc of cupy.cuda.memory.MemoryPool object at 0x7fa28de86860>
 ENTERED C FUNCTION!
 
 libgomp: TODO
