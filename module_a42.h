@@ -8,10 +8,21 @@
 #include "openacc.h"
 #include "stdlib.h"
 
+#include <cstdlib>
+#include <stdexcept>
+#include <execinfo.h>
+
+
+
+void handler( void );
+
+
+
+int addvector_cab(void);
 
 extern "C" {
 
-    int addvector_cab(void);
+    int wrapper_add(void);
 }
 
 #endif
